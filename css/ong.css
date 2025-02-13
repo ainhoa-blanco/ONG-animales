@@ -1,0 +1,404 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*submenu*/
+
+#color-ajuda-ns {
+  background-color: #ca0000;
+}
+
+#color-ajuda-ns:hover {
+  background-color: #ff0000;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: inline-block;
+  margin-right: 20px;
+  padding: 15px;
+}
+
+.submenu {
+  position: relative;
+  align-items: center;
+}
+
+.submenu-con {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(128, 128, 128, 0.863);
+  ;
+  border-radius: 50px;
+  border: 2px solid black;
+  text-align: center;
+}
+
+.submenu:hover .submenu-con {
+  display: block;
+}
+
+.a-submenu {
+  white-space: nowrap;
+}
+
+/*index*/
+body {
+  background-image: url("../imagenes/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-top: 100px;
+  margin-left: 0;
+  line-height: 1.6;
+  width: 100%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header {
+  position: fixed;
+  z-index: 4;
+  width: 100%;
+  top: 0;
+}
+
+nav {
+  background-image: url("../imagenes/patas.png");
+  padding: 15px;
+  text-align: center;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+}
+
+nav a {
+  background-color: black;
+  border-radius: 20px;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  margin: 0 150px;
+  font-size: 15px;
+  font-family: "Roboto";
+  text-transform: uppercase;
+  border: 2px solid black;
+}
+
+nav a:hover {
+  background-color: grey;
+  transform: scale(1.1);
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 50px;
+  text-decoration: none;
+}
+
+p {
+  font-size: 20px;
+  margin: 0 10px;
+  padding-bottom: 15px;
+}
+
+/* Frase */
+#frase-translucida {
+  background: rgba(255, 0, 0, 0.47);
+  width: 80%;
+  margin: 0% 10%;
+}
+
+#frase {
+  color: #ffffff;
+  font-weight: normal;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+/* Qui som i novetats */
+
+#qui-som-novetats {
+  padding: 0px 100px 0px 90px;
+  display: flex;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.titols {
+  text-decoration: underline;
+}
+
+/* Qui som */
+
+#paragraf1 {
+  background-color: rgba(220, 207, 207, 0.808);
+  background-image: url('../imagenes/banner.png');
+  background-size: 600px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  width: 800px;
+  height: 620px;
+  text-align: center;
+  border: 3px solid #ca0000;
+  padding: 20px;
+}
+
+/* Novetats Pagina Principal*/
+
+.novetats-pagina-principal {
+  background-color: rgba(220, 207, 207, 0.808);
+  width: 800px;
+  height: 620px;
+  border: 3px solid #ca0000;
+  padding: 20px;
+}
+
+.columna {
+  float: left;
+  width: 50%;
+}
+
+.noticiaP {
+  text-align: center;
+  padding: 20px;
+}
+
+.mida-noticies {
+  height: 150px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.mida-noticies:hover {
+  transform: scale(0.95);
+}
+
+/* color click text de cada noticia */
+
+.colorClick {
+  color: black;
+}
+
+.colorClick:link {
+  color: black;
+  text-decoration: none;
+}
+
+.colorClick:hover {
+  color: red;
+}
+
+/* botó mes info novetats */
+
+.boto-mes-info {
+  text-align: center;
+}
+
+.boton-mas {
+  display: inline-block;
+  padding: 8px 15px;
+  margin-top: 15px;
+  text-decoration: none;
+  color: #000000;
+  background-color: #f05151;
+  border-radius: 5px;
+}
+
+.boton-mas:hover {
+  background-color: #fc7b64;
+}
+
+/* Aliats per la causa */
+/*persones participants*/
+
+.aliats-per-la-causa {
+  background-color: rgba(220, 207, 207, 0.808);
+  border: 3px solid #ca0000;
+  height: 500px;
+  padding: 20px;
+  margin: 30px 100px 0px 90px;
+  /* margin-top: 30px;
+    margin-left: 90px;
+    margin-right: 100px; */
+  align-items: center;
+  width: 89%;
+  /* per alinear amb el div superior */
+}
+
+.persones {
+  text-align: center;
+}
+
+.persona {
+  text-align: center;
+  width: 25%;
+  float: left;
+}
+
+.personaFinal {
+  float: right;
+}
+
+.imatgesPersones {
+  height: 200px;
+}
+
+/*novetats, noticies més info pagina secundaria*/
+
+.noticies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1600px;
+  margin: 20px auto;
+  background-color: rgba(220, 207, 207, 0.808);
+  border: 3px solid red;
+  padding: 100px;
+}
+
+.imatgesMida {
+  border-radius: 20px;
+  height: 200px;
+}
+
+.noticia {
+  max-width: 500px;
+  text-align: center;
+}
+
+/*iniciar sessió*/
+
+#formulariIniciar {
+  background-color: #ddddddb4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.966);
+  width: 600px;
+  margin-top: 250px;
+  margin-bottom: 400px;
+  text-align: center;
+  color: #000000;
+  margin-left: 33%;
+  border: 3px solid #ca0000;
+}
+
+#formulariIniciar label,
+legend {
+  color: #000000;
+  font-size: 25px;
+}
+
+/*iniciar sessió i registrar-se*/
+
+#formulariRegistrarse {
+  background-color: #ddddddb4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.966);
+  width: 600px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+  color: #000000;
+  margin-left: 33%;
+  border: 3px solid #ca0000;
+}
+
+.inputForm,
+select {
+  padding: 2px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  align-items: right;
+  border-radius: 20px;
+  border: 1px solid #ca0000;
+}
+
+.camp {
+  display: flex;
+  width: 100%;
+  display: inline-block;
+  align-items: right;
+}
+
+.camptema {
+  display: flex;
+  width: 100%;
+  display: inline-block;
+}
+
+.botonFormulari {
+  width: 100%;
+}
+
+#formulariRegistrarse label,
+legend {
+  color: #000000;
+  font-size: 25px;
+}
+
+fieldset {
+  border-color: #ca0000;
+}
+
+#formulariRegistrarse div {
+  padding-bottom: 15px;
+}
+
+button {
+  background-color: #ca0000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #4e322d;
+}
+
+/*footer*/
+footer {
+  background-color: #00000098;
+  margin-top: 50px;
+  text-align: center;
+  color: white;
+  padding-top: 10px;
+  display: inline-block;
+  width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#div-ultim {
+  margin-top: 40px;
+  background-color: #333333a8;
+}
+
+#contacte {
+  margin-top: 40px;
+}
+
+.num-telf-mail {
+  color: #e97878;
+}

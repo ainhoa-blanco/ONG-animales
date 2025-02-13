@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ONG</title>
+  <link rel="stylesheet" href="../css/ong.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <li>
+        <a href="../index.html">Inici</a>
+      </li>
+      <li class="submenu"><a id="color-ajuda-ns">Ajuda-ns</a>
+        <ul class="submenu-con">
+          <li><a class="a-submenu" href="../htdcos/registrarSe.html">Fer-se soci</a></li>
+          <li><a class="a-submenu" href="../htdocs/iniciSessio.html">Iniciar Sessió</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#mapa">Ubicació i contacte</a>
+      </li>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Iniciar sessió</h1>
+    <form id="formulariIniciar" action="procesar_formulario.php" method="post">
+
+      <div class="camp">
+        <label for="email"><span>Email: </span></label>
+        <input class="inputForm" type="email" id="email" name="email" required>
+      </div>
+      <div class="camp">
+        <label for="password">Contrasenya:</label>
+        <input class="inputForm" type="password" id="password" name="password" required>
+      </div>
+
+      <button type="submit">Iniciar Sessió</button>
+
+      <p>No tens compte? Registra't <a href="../htdocs/registrarSe.html">aquí</a></p>
+
+    </form>
+  </main>
+  <footer>
+    <div>
+      <h2>Ubicació</h2>
+      <div style="width: 100%" id="mapa">
+        <iframe width="1000" height="300"
+          src="https://maps.google.com/maps?width=1000&amp;height=300&amp;hl=en&amp;q=Pla%C3%A7a%20d'urquinaona%2010+()&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          class="mapa"><a href="https://www.gps.ie/">gps trackers</a></iframe>
+      </div>
+      <h2 id="contacte">Contacte</h2>
+      <p class="enllac"><b>Telèfon: </b><a href="tel:+34635504612" class="num-telf-mail">635 504 612</a></p>
+      <p class="enllac">
+        <b>Gmail: </b>
+        <a href="mailto:ablancoe2324@politecnics.barcelona" class="num-telf-mail">ablancoe2324@politecnics.barcelona</a>
+      </p>
+      <p></p>
+      <div id="div-ultim">
+        <p>
+          Política de privacitat | Copyright 2024 | Avís legal | Preguntes
+          freqüents
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

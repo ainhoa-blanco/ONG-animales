@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ONG</title>
+  <link rel="stylesheet" href="../css/ong.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <li>
+        <a href="../index.html">Inici</a>
+      </li>
+      <li class="submenu"><a id="color-ajuda-ns">Ajuda-ns</a>
+        <ul class="submenu-con">
+          <li><a class="a-submenu" href="../htdocs/registrarSe.html">Fer-se soci</a></li>
+          <li><a class="a-submenu" href="../htdocs/iniciSessio.html">Iniciar Sessió</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#mapa">Ubicació i contacte</a>
+      </li>
+    </nav>
+  </header>
+  <main>
+
+    <h1>Formulari</h1>
+    <form id="formulariRegistrarse" action="procesar_formulario.php" method="post">
+
+      <div class="camp">
+        <label for="nom"><span>Nom *: </span></label>
+        <input class="inputForm" type="text" id="nom" name="nom" required>
+      </div>
+
+      <div class="camp">
+        <label for="cognoms"><span>Cognoms *: </span></label>
+        <input class="inputForm" type="text" id="cognoms" name="cognoms" required>
+      </div>
+
+      <div class="camp">
+        <label for="tractament"><span>Tractament *: </span></label>
+        <select id="tractament" name="tractament" required>
+          <option value="selec">--Seleccionar opció--</option>
+          <option value="Sr.">Sr.</option>
+          <option value="Sra.">Sra.</option>
+          <option value="Sense tractament">Sense tractament</option>
+        </select>
+      </div>
+
+      <div class="camp">
+        <label for="codi_postal"><span>Codi Postal *: </span></label>
+        <input class="inputForm" type="text" id="codi_postal" name="codi_postal" pattern="[0-9]{5}"
+          placeholder="        Format: 5 digits" required>
+
+      </div>
+
+      <div class="camp">
+        <label for="telefon"><span>Telèfon: </span></label>
+        <input class="inputForm" type="tel" id="telefon" name="telefon">
+      </div>
+
+      <div class="camp">
+        <label for="email"><span>Email *: </span></label>
+        <input class="inputForm" type="email" id="email" name="email" required>
+      </div>
+
+      <div class="camp">
+        <label for="quota_soci"><span>Quota de Soci *: </span></label>
+        <select id="quota_soci" name="quota_soci" required>
+          <option value="opc_soci_0">--Seleccionar opció--</option>
+          <option value="opc_soci_1">20€</option>
+          <option value="opc_soci_2">50€</option>
+          <option value="opc_soci_3">100€</option>
+        </select>
+      </div>
+
+      <div class="camptema">
+        <fieldset>
+          <legend>
+            <h3>Temes d'Interès: </h3>
+          </legend>
+          <div>
+            <input class="inputForm" type="checkbox" id="tema1" name="temes_interes" value="salvament_animal">
+            <label for="tema1">Salvament Animal</label>
+          </div>
+          <div>
+            <input class="inputForm" type="checkbox" id="tema2" name="temes_interes" value="apadrinament">
+            <label for="tema2">Apadrinament</label>
+          </div>
+          <div>
+            <input class="inputForm" type="checkbox" id="tema3" name="temes_interes" value="educacio">
+            <label for="tema3">Educació</label>
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="camp">
+        <label class="checkbox">
+          <input class="inputForm" type="checkbox" name="conformitat" required>
+          He llegit i accepto la política de privacitat *
+        </label>
+      </div>
+
+      <div class="camp">
+        <label class="checkbox">
+          <input class="inputForm" type="checkbox" name="subscripcio_newsletter">
+          Subscriure's a la Newsletter
+        </label>
+      </div>
+
+      <div class="botonFormulari">
+        <button type="submit">Registrar-se</button>
+      </div>
+
+      <p>Ja tens compte? Inicia sessió <a href="../htdocs/iniciSessio.html">aquí</a></p>
+
+    </form>
+
+  </main>
+
+  <footer>
+    <div>
+      <h2>Ubicació</h2>
+      <div style="width: 100%" id="mapa">
+        <iframe width="1000" height="300"
+          src="https://maps.google.com/maps?width=1000&amp;height=300&amp;hl=en&amp;q=Pla%C3%A7a%20d'urquinaona%2010+()&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          class="mapa"><a href="https://www.gps.ie/">gps trackers</a></iframe>
+      </div>
+      <h2 id="contacte">Contacte</h2>
+      <p class="enllac">Telèfon: <a href="tel:+34635504612">635 504 612</a></p>
+      <p class="enllac">Gmail: <a
+          href="mailto:ablancoe2324@politecnics.barcelona">ablancoe2324@politecnics.barcelona</a></p>
+      <p></p>
+      <div id="div-ultim">
+        <p>Política de privacitat | Copyright 2024 | Avís legal | Preguntes freqüents</p>
+      </div>
+
+    </div>
+
+  </footer>
+</body>
+
+</html>
