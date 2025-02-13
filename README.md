@@ -38,6 +38,7 @@ El sitio web utiliza imágenes ubicadas en `src/imagenes/`, incluyendo:
 ## Roadmap
 - Hacerla responsiva.
 - Hacer un diseño mas elegante.
+- Hacer que se conecte a una base de datos para el registro y inicio de sesión.
 
 ## Autor
 Desarrollado por Ainhoa Blanco.
